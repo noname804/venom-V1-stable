@@ -16,7 +16,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 from config import BOT_TOKEN, GROUP_ID, OWNER_USERNAME
 loop = asyncio.get_event_loop()
 
-TOKEN = 'BOT_TOKEN'
+TOKEN = '7396653530:AAEj2RyXPira9B9-RN8x3Xh5je297MEcs0M'
 MONGO_URI = 'mongodb+srv://VENOMxCRAZY:CRAZYxVENOM@cluster0.ythilmw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tlsAllowInvalidCertificates=true'
 FORWARD_CHANNEL_ID = [GROUP_ID]
 CHANNEL_ID = {GROUP_ID}
@@ -28,7 +28,7 @@ client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
 db = client['VENOM']
 users_collection = db.users
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(7396653530:AAEj2RyXPira9B9-RN8x3Xh5je297MEcs0M)
 REQUEST_INTERVAL = 1
 
 blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]  # Blocked ports list
@@ -97,7 +97,7 @@ def is_user_admin(user_id, chat_id):
 def approve_or_disapprove_user(message):
     user_id = message.from_user.id
     chat_id = message.chat.id
-    is_admin = is_user_admin(user_id, CHANNEL_ID)
+    is_admin = is_user_admin(708120566)
     cmd_parts = message.text.split()
 
     if not is_admin:
